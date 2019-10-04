@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+    var usuario = (Model.Usuario)Session["Usuario"];
+}
+
+@if (@usuario.Admin == 1)
+{
+    <script type="text/javascript">
+            bootbox.dialog({
+                className: "h5",
+                size: "big",
+                message: "Login efetuado como administrador!"
+
+            });
+            window.setTimeout(function () {
+                bootbox.hideAll();
+            }, 1250);
+    </script>
+}
+
+<div style="width:100%;">
+    <div class="jumbotron text-center mb-0">
+        <h1 id="bemvindoText" class="display-4">
+            <span class="text-dark">
+                <p>
+                    @View.Resources.Resource.BemVindo, @usuario.NomeCompleto!
+                </p>
+            </span>
+        </h1>
+        <br>
+        <font size="3">
+            <p class="lead">
+                <h1 class="text-dark"></h1>
+            </p>
+        </font>
+        <legend></legend>
+        @*<br>
+            <font size="4">
+                <p class="lead">
+                    <h1 class="text-dark">
+                        Dia  <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output> <br />
+                        Hora  <output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
+                    </h1>
+            </font>*@
+        </div>
+        <div class="card-deck mt-0">
+            <div class="card">
+                <img src="~/Content/uploads/Entregador.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@View.Resources.Resource.Confianca</h5>
+                    <p class="card-text">@View.Resources.Resource.Clientesse</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="~/Content/uploads/rotas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@View.Resources.Resource.Rapidez</h5>
+                    <p class="card-text">@View.Resources.Resource.Entregaro</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="~/Content/uploads/equipe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@View.Resources.Resource.Equipeunida</h5>
+                    <p class="card-text">@View.Resources.Resource.Sempree</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+        </div>
+
+
+</div>
+

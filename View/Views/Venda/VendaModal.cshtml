@@ -1,0 +1,46 @@
+﻿<div class="modal bounceInDown animated" tabindex="-1" role="dialog" id="modal-venda">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@View.Resources.Resource.CadastroVenda</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="venda-campo-vendedor">@View.Resources.Resource.Vendedor</label>
+                    <select class="form-control"
+                            id="venda-campo-vendedor">
+                        <option disabled="disabled"
+                                selected="selected">
+                            @View.Resources.Resource.SelecioneumVendedor
+                        </option>
+                        @foreach (Model.Vendedor vendedor in ViewBag.Vendedores)
+                        {
+                            <option value="@vendedor.Id">@vendedor.Nome</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="venda-campo-cliente">@View.Resources.Resource.Cliente</label>
+                    <select class="form-control" id="venda-campo-cliente" name="campo-cliente">
+                        <option disabled="disabled" selected="selected">@View.Resources.Resource.SelecioneumCliente</option>
+                        @foreach (Model.Cliente cliente in ViewBag.Clientes)
+                        {
+                            <option value="@cliente.Id">@cliente.Nome</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="venda-campo-desconto">@View.Resources.Resource.Desconto</label>
+                    <input type="number" id="venda-campo-desconto" class="form-control" min="0" max="25" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="rubberBand animated btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> @View.Resources.Resource.Cancelar</button>
+                <button type="button" class="rubberBand animated btn btn-success" id="venda-botao-salvar"><i class="fa fa-check"></i>  @View.Resources.Resource.Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

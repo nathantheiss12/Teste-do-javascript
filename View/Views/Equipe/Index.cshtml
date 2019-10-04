@@ -1,0 +1,286 @@
+﻿
+@{
+    Layout = null;
+
+    <title>MCSS - Equipe</title>
+
+    <link href="~/Content/theme/global_assets/images/logo_icon_dark.png" rel="shortcut icon" />
+    <link href="~/Content/login/css/login.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/Animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
+    <link href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" />
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/theme/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="~/Content/css/select2.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="~/Content/css/replaces.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Content/theme/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="~/Content/theme/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="~/Scripts/bootbox.min.js"></script>
+    <script src="~/Content/theme/assets/js/app.js"></script>
+    <script src="~/Content/js/lang.js"></script>
+    <script src="~/Content/theme/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="~/Scripts/jquery.mask.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/jquery.mask.min.js"></script>
+}
+
+<body class="sidebar-xs">
+    <div class="navbar navbar-expand-md navbar-light">
+
+        <!-- Header with logos -->
+        <!-- /header with logos -->
+        <!-- Mobile controls -->
+        <div class="d-flex flex-1 d-md-none bg-light text-dark">
+            <div class="navbar-brand mr-auto">
+                <a href="/home" class="d-inline-block">
+                    <h2 class="titulonav text-center text-dark">mcss</h2>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+
+        </div>
+        <!-- /mobile controls -->
+        <!-- Navbar content -->
+        <div class="bg-light collapse navbar-collapse primary" id="navbar-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/home" class="navbar-nav-link d-flex align-items-center ">
+
+                        <h2 class="titulonav text-center text-dark mb-0 mt-0">mcss</h2>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a style="font-size:15px" href="/equipe" class="navbar-nav-link d-flex align-items-center mt-1 ">
+
+                        <span class="text-dark">@View.Resources.Resource.Equipe</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a style="font-size:15px" href="/contato" class="navbar-nav-link d-flex align-items-center mt-1 ">
+
+                        <span class="text-dark">@View.Resources.Resource.Contato</span>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="badge badge-pill ml-md-3 mr-md-auto"> </span>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="text-dark navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+
+                        @if (Session["Language"] == null || Session["Language"].ToString() == "pt-BR")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/br.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Português</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "en-US")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">English</span>
+                        }
+                        else if (Session["Language"] == null || Session["Language"].ToString() == "es-ES")
+                        {
+                            <img id="imgLANG" src="~/Content/theme/global_assets/images/lang/es.png" class="img-flag mr-2" alt="">
+                            <span id="langAtual">Español</span>
+                        }
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a id="btnPT" href="/Home/Change?lang=pt-BR" class="dropdown-item portuguese"><img src="/Content/theme/global_assets/images/lang/br.png" class="img-flag" alt=""><span id="ptLang">Português</span></a>
+                        <a id="btnEN" href="/Home/Change?lang=en-US" class="dropdown-item english"><img src="/Content/theme/global_assets/images/lang/gb.png" class="img-flag" alt=""><span id="enLang">English</span> </a>
+                        <a id="btnES" href="/Home/Change?lang=es-ES" class="dropdown-item spanish"><img src="/Content/theme/global_assets/images/lang/es.png" class="img-flag" alt=""><span id="eslang">Español</span> </a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="/login" class="navbar-nav-link d-flex align-items-center ">
+
+                        <span class="text-dark">@View.Resources.Resource.FazerLogin</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="/usuario/perfil" class="dropdown-item">
+                            <i class="icon-user-plus"></i>Meu Perfil
+                        </a>
+                        <div class="/dropdown-divider"></div>
+                        <a href="/contato/index" class="dropdown-item"><span>Não remover</span></a>
+                        <a href="/usuario/config" class="dropdown-item"><i class="icon-cog5"></i> <span>Configurações da Conta</span> </a>
+                        <a href="/login/logout" class="dropdown-item"><i class="icon-switch2"></i> <span>Logout</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar content -->
+
+    </div>
+
+    <div class="jumbotron">
+        <div id="accordion">
+
+            <!-- Eduardo -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button style="font-size:18px" class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img id="imagemUsuario" src="~/Content/uploads/eduardo.jpg" class="rounded-circle mr-2" height="60" width="60" alt="">
+                            Eduardo Ehmke Hausmann <i class="fas fa-angle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div style="font-size:16px" class="card-body">
+                        Meu nome é Eduardo, estou com 17 anos, e sou de Blumenau.<br />
+                        Tenho interesse na área da informática a pouco tempo.<br />
+                        Tenho uma grande facilidade em trabalhar em equipe.<br />
+                        Alguns de meus hobbies são ler, passar o tempo com os amigos, assistir filmes e séries.<br />
+                        Fico feliz por ter tirar um tempo para ler um pouco sobre mim.<br />
+                        Obrigado!
+                    </div>
+                </div>
+            </div>
+            <!-- /Eduardo -->
+            <!-- Felipe -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button style="font-size:18px" class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+
+                            <img id="imagemUsuario" src="~/Content/uploads/felipe.jpg" class="rounded-circle mr-2" height="60" width="60" alt="">
+                            Felipe Franco Weber <i class="fas fa-angle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div style="font-size:16px" class="card-body">
+                        Me chamo Felipe, atualmente estou com 17 anos, e sou natural desta bela cidade, Blumenau.<br />
+                        Adquiri interesse pela informática com cerca de 8 anos de idade, onde comecei a pesquisar sobre e assim decidi o que eu queria para mim.<br />
+                        Me considero uma pessoa com facilidade em aprender e trabalhar em grupo.<br />
+                        Alguns dos meus hobbies são passar o tempo com a família e os amigos, assistir filmes e séries, e claro a programação.<br />
+                        Fico feliz por ter disponibilizado um tempo para saber um pouco sobre mim ^-^<br />
+                        Obrigado.
+                    </div>
+                </div>
+            </div>
+            <!-- /Felipe -->
+            <!-- Henrique -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button style="font-size:18px" class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <img id="imagemUsuario" src="~/Content/uploads/henrique.jpg" class="rounded-circle mr-2" height="60" width="60" alt="">
+
+                            Henrique Linhares Montibeller <i class="fas fa-angle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div style="font-size:16px" class="card-body">
+                        Nascido em Blumenau, 16 anos de idade.<br />
+                        Conhecimento em C#, css, html, javascript, photoshop, facilidade no aprendizado.<br />
+                        Hobby, ler qualquer tipo de livro que me traz algum tipo de aprendizado.
+                    </div>
+                </div>
+            </div>
+            <!-- /Henrique -->
+            <!-- Illan -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button style="font-size:18px" class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <img id="imagemUsuario" src="~/Content/uploads/illan.jpg" class="rounded-circle mr-2" height="60" width="60" alt="">
+                            Illan Vinícius Dickmann <i class="fas fa-angle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div style="font-size:16px" class="card-body">
+                        Olá, Meu nome é Illan, tenho 16 anos e sou naturalizado Blumenauense.<br />
+                        Sou uma pessoa muito fascinada pela tecnologia e tenho muita vontade de aprender coisas nova que seguem o ramo da programação e inteligência artificial,gosto muito de sempre estar estudando para obter maior conhecimento.<br />
+                        Atualmente estou focando meus estudos no desenvolvimento web, tanto no back-end como no front-end.<br />
+                        Espero que tenha gostado deste breve resumo.<br />
+                        Obrigado pela atenção!<br />
+                        Atenciosamente Illan.
+                    </div>
+                </div>
+            </div>
+            <!-- /Illan -->
+            <!-- Nathan -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button style="font-size:18px" class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <img id="imagemUsuario" src="~/Content/uploads/nathan.jpg" class="rounded-circle mr-2" height="60" width="60" alt="">
+
+                            Nathan Guilherme Martinez Theiss <i class="fas fa-angle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div style="font-size:16px" class="card-body">
+                        Natural de Blumenau, 16 anos de idade.<br />
+
+                        Raciocínio lógico desenvolvido, bom em impor e discutir ideias, não desiste fácil.<br />
+
+                        Formado em pacote Office,Photoshop e CorelDRAW.<br />
+                        Conhecimentos em C#,Java,pascal,html ,CSS e Delphi.<br />
+
+                        Alguns dos hobbies são, ler,pugilismo e matematica.
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Nathan -->
+            <!-- Pablo -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button style="font-size:18px" class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            <img id="imagemUsuario" src="~/Content/uploads/Pabloluz.jpg" class="rounded-circle mr-2" height="60" width="60" alt="">
+
+                            Pablo Gonçalves Luz Vieira <i class="fas fa-angle-down"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div style="font-size:16px" class="card-body">
+                        Nascido na serra catarinense, 27 anos de idade.<br />
+                        Formação em mecânica, elétrica, web designer, desenvolvimento em software e professor de artes marciais.<br />
+                         hobbies, projetos eletromecânicos.
+                    </div>
+                </div>
+            </div>
+            <!-- /Pablo -->
+
+        </div>
+    </div>
+</body>

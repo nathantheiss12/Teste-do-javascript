@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acao" xml:space="preserve">
+    <value>Action</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Anodefabricacao" xml:space="preserve">
+    <value>Year of Fabrication</value>
+    <comment>checked</comment>
+  </data>
+  <data name="AnoFabricacao" xml:space="preserve">
+    <value>Year of Fabrication</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeCategoria" xml:space="preserve">
+    <value>Register a Category</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeCliente" xml:space="preserve">
+    <value>Register a Costumer</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeProduto" xml:space="preserve">
+    <value>Register a Product</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeRotas" xml:space="preserve">
+    <value>Register a Route</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeUsuario" xml:space="preserve">
+    <value>Register a User</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeVeiculo" xml:space="preserve">
+    <value>Register a Vehicle</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeVendedor" xml:space="preserve">
+    <value>Register a Seller</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Categoria" xml:space="preserve">
+    <value>Category</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Categorias" xml:space="preserve">
+    <value>Categories</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CEP" xml:space="preserve">
+    <value>Zipcode</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Cliente" xml:space="preserve">
+    <value>Client</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Clientes" xml:space="preserve">
+    <value>Clients</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CNPJ" xml:space="preserve">
+    <value>EIN</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Code</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CPF" xml:space="preserve">
+    <value>SSN</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Lista" xml:space="preserve">
+    <value>List</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Marca" xml:space="preserve">
+    <value>Brand</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Modelo" xml:space="preserve">
+    <value>Model</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Nome" xml:space="preserve">
+    <value>Name</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaCategoria" xml:space="preserve">
+    <value>New Category</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaRota" xml:space="preserve">
+    <value>New Route</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoCliente" xml:space="preserve">
+    <value>New Client</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoProduto" xml:space="preserve">
+    <value>New Product</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoUsuario" xml:space="preserve">
+    <value>New User</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoVeiculo" xml:space="preserve">
+    <value>New Vehicles</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoVendedor" xml:space="preserve">
+    <value>New Saleman</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NumeroCaminhao" xml:space="preserve">
+    <value>Truck Number</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Numerodocaminhao" xml:space="preserve">
+    <value>Truck Number</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Placa" xml:space="preserve">
+    <value>Plate</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Produtos" xml:space="preserve">
+    <value>Products</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Produto" xml:space="preserve">
+    <value>Product</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Quantidade" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>checked</comment>
+  </data>
+  <data name="QuantidadeProdutos" xml:space="preserve">
+    <value>Quantity of Products</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Rota" xml:space="preserve">
+    <value>Route</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Rotas" xml:space="preserve">
+    <value>Routes</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Salvar" xml:space="preserve">
+    <value>Save</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Selecioneumacategoria" xml:space="preserve">
+    <value>Select an Category</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Selecioneumamarca" xml:space="preserve">
+    <value>Select an Brand</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Selecioneumusuario" xml:space="preserve">
+    <value>Select an User</value>
+    <comment>checked</comment>
+  </data>
+  <data name="SelecioneumVeiculo" xml:space="preserve">
+    <value>Select a Vehicle</value>
+    <comment>checked</comment>
+  </data>
+  <data name="SelecioneumVendedor" xml:space="preserve">
+    <value>Select a Saleman</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Senha" xml:space="preserve">
+    <value>Password</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Telefone" xml:space="preserve">
+    <value>Phone Number</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>User</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Usuarios" xml:space="preserve">
+    <value>Users</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Valor" xml:space="preserve">
+    <value>Value</value>
+    <comment>checked</comment>
+  </data>
+  <data name="ValorFinal" xml:space="preserve">
+    <value>Final Value</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Valorunitario" xml:space="preserve">
+    <value>Unitary Value</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Veiculos" xml:space="preserve">
+    <value>Vehicles</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Venda" xml:space="preserve">
+    <value>Sale</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Vendedor" xml:space="preserve">
+    <value>Saleman</value>
+    <comment>checked</comment>
+  </data>
+  <data name="AlterarDados" xml:space="preserve">
+    <value>Change Data</value>
+    <comment>checked</comment>
+  </data>
+  <data name="AlterarSenha" xml:space="preserve">
+    <value>Change Password</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Cidade" xml:space="preserve">
+    <value>City</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CNH" xml:space="preserve">
+    <value>Driving License</value>
+    <comment>checked</comment>
+  </data>
+  <data name="ConfirmarSenha" xml:space="preserve">
+    <value>Password Confirmation</value>
+    <comment>checked</comment>
+  </data>
+  <data name="DadosPessoais" xml:space="preserve">
+    <value>Personal Data</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Endereco" xml:space="preserve">
+    <value>Address</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Estado" xml:space="preserve">
+    <value>State</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Logradouro" xml:space="preserve">
+    <value>Address</value>
+    <comment>checked</comment>
+  </data>
+  <data name="País" xml:space="preserve">
+    <value>Country</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Selecioneumacidade" xml:space="preserve">
+    <value>Select an City</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Selecioneumestado" xml:space="preserve">
+    <value>Select a State</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Selecioneumpaís" xml:space="preserve">
+    <value>Select a Country</value>
+    <comment>checked</comment>
+  </data>
+  <data name="entrada" xml:space="preserve">
+    <value>Entrance</value>
+    <comment>checked</comment>
+  </data>
+  <data name="mercadorias" xml:space="preserve">
+    <value>Goods</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NossoSoftware" xml:space="preserve">
+    <value>Our software were designed to work by facilitating the entrance and exit of products in the stock.</value>
+    <comment>checked</comment>
+  </data>
+  <data name="MCSS" xml:space="preserve">
+    <value>Our MCSS system aims to facilitate the entry and exit work of a carrier or stock in general, and at the same time record a sale and all of its information, thus replacing the data collectors with a more practical application.</value>
+    <comment>checked</comment>
+  </data>
+  <data name="saida" xml:space="preserve">
+    <value>exit</value>
+    <comment>checked</comment>
+  </data>
+  <data name="software" xml:space="preserve">
+    <value>Software</value>
+    <comment>checked</comment>
+  </data>
+  <data name="trabalho" xml:space="preserve">
+    <value>work</value>
+    <comment>checked</comment>
+  </data>
+  <data name="transportadora" xml:space="preserve">
+    <value>Shipping Company</value>
+    <comment>checked</comment>
+  </data>
+  <data name="uma" xml:space="preserve">
+    <value>an</value>
+    <comment>checked</comment>
+  </data>
+  <data name="BemVindo" xml:space="preserve">
+    <value>Welcome</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Configuracoesdaconta" xml:space="preserve">
+    <value>Account Config</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Inicio" xml:space="preserve">
+    <value>Home</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Main</value>
+    <comment>checked</comment>
+  </data>
+  <data name="MeuPerfil" xml:space="preserve">
+    <value>My Profile</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Sair" xml:space="preserve">
+    <value>Logout</value>
+    <comment>checked</comment>
+  </data>
+  <data name="RG" xml:space="preserve">
+    <value>ID</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeInventario" xml:space="preserve">
+    <value>Inventory Registration</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Veiculo" xml:space="preserve">
+    <value>Vehicle</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Vendedores" xml:space="preserve">
+    <value>Salemans</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeMarca" xml:space="preserve">
+    <value>Register a Brand</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastroVenda" xml:space="preserve">
+    <value>Register a Sale</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Frota" xml:space="preserve">
+    <value>Fleet</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Inventario" xml:space="preserve">
+    <value>Inventory</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Inventarios" xml:space="preserve">
+    <value>Inventories</value>
+    <comment>checked</comment>
+  </data>
+  <data name="ListadeMarcas" xml:space="preserve">
+    <value>Brand List</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Marcas" xml:space="preserve">
+    <value>Brands</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Modelos" xml:space="preserve">
+    <value>Models</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaMarca" xml:space="preserve">
+    <value>New Brand</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Portugues" xml:space="preserve">
+    <value>Portuguese</value>
+    <comment>checked</comment>
+  </data>
+  <data name="SelecioneumCliente" xml:space="preserve">
+    <value>Select a Client</value>
+    <comment>checked</comment>
+  </data>
+  <data name="SelecioneumProduto" xml:space="preserve">
+    <value>Select a Product</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Configuracaoconta" xml:space="preserve">
+    <value>Account Config</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Desconto" xml:space="preserve">
+    <value>Discount</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaVenda" xml:space="preserve">
+    <value>New Sale</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Profile</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Tema" xml:space="preserve">
+    <value>Theme</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Vendas" xml:space="preserve">
+    <value>Sales</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Alterarfoto" xml:space="preserve">
+    <value>Change Photo</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>Send</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Temas" xml:space="preserve">
+    <value>Themes</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>Description</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Fechar" xml:space="preserve">
+    <value>Close</value>
+    <comment>checked</comment>
+  </data>
+  <data name="ListadeProdutos" xml:space="preserve">
+    <value>Product list</value>
+    <comment>checked</comment>
+  </data>
+  <data name="ListadeVendas" xml:space="preserve">
+    <value>Sales List</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Novo" xml:space="preserve">
+    <value>New</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Preco" xml:space="preserve">
+    <value>Price</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CadastrodeModelo" xml:space="preserve">
+    <value>Register a Model</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Edit</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoModelo" xml:space="preserve">
+    <value>New Model</value>
+    <comment>checked</comment>
+  </data>
+  <data name="SelecioneumModelo" xml:space="preserve">
+    <value>Select a Model</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Nosbuscamos" xml:space="preserve">
+    <value>We seek to help people by facilitating their lives always with ideas that are beyond financial gains,
+Because money can end but the satisfaction and pride of a good job that really helps,
+It never ends, and every achievement arises more motivation to not give up and always keep working.</value>
+  </data>
+  <data name="Visao" xml:space="preserve">
+    <value>Vision</value>
+    <comment>checked</comment>
+  </data>
+  <data name="Preenchacorretamente" xml:space="preserve">
+    <value>Fill in the Field Correctly!</value>
+    <comment>checked</comment>
+  </data>
+  <data name="FazerLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NomeUsuario" xml:space="preserve">
+    <value>Nickname</value>
+  </data>
+  <data name="AdicioneProdutos" xml:space="preserve">
+    <value>Add Products to Purchase</value>
+  </data>
+  <data name="Contato" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Sobre" xml:space="preserve">
+    <value>About the Project</value>
+  </data>
+  <data name="Equipe" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Mensagem" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="SeuEmail" xml:space="preserve">
+    <value>your E-mail</value>
+  </data>
+  <data name="Sobrenome" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Titulo" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="NumeroCasa" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Clientesse" xml:space="preserve">
+    <value>Clients becoming friends, is also evidence of quality work.</value>
+  </data>
+  <data name="Confianca" xml:space="preserve">
+    <value>Trust and Quality</value>
+  </data>
+  <data name="Entregaro" xml:space="preserve">
+    <value>Delivering the product in the expected time always guarantees positive returns.</value>
+  </data>
+  <data name="Equipeunida" xml:space="preserve">
+    <value>United team</value>
+  </data>
+  <data name="Rapidez" xml:space="preserve">
+    <value>Quickly</value>
+  </data>
+  <data name="Sempree" xml:space="preserve">
+    <value>It is always very important to support the entire team, so that everyone can grow.</value>
+  </data>
+  <data name="Entrar" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="EditarCategoria" xml:space="preserve">
+    <value>Category Editing</value>
+  </data>
+  <data name="EditarCliente" xml:space="preserve">
+    <value>Client Edition</value>
+  </data>
+  <data name="EditarMarca" xml:space="preserve">
+    <value>Brand Edition</value>
+  </data>
+  <data name="EditarModelo" xml:space="preserve">
+    <value>Model Editing</value>
+  </data>
+  <data name="EditarProduto" xml:space="preserve">
+    <value>Product Edition</value>
+  </data>
+  <data name="EditarRota" xml:space="preserve">
+    <value>Route Editing</value>
+  </data>
+  <data name="EditarUsuario" xml:space="preserve">
+    <value>User Edition</value>
+  </data>
+  <data name="EditarVeiculo" xml:space="preserve">
+    <value>Vehicle Edition</value>
+  </data>
+  <data name="EditarVendedor" xml:space="preserve">
+    <value>Salesman Edition</value>
+  </data>
+  <data name="Localizacao" xml:space="preserve">
+    <value>Localization</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovaCidade" xml:space="preserve">
+    <value>New City</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoEstado" xml:space="preserve">
+    <value>New State</value>
+    <comment>checked</comment>
+  </data>
+  <data name="NovoPais" xml:space="preserve">
+    <value>New Country</value>
+    <comment>checked</comment>
+  </data>
+  <data name="CategoriaAlterada" xml:space="preserve">
+    <value>Category Changed Successfully</value>
+  </data>
+</root>

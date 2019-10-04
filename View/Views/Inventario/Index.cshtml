@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Inventário";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/css/tabela/util.css" />
+
+<div class="table responsive">
+    <h2 class="text-center">@View.Resources.Resource.Inventarios</h2>
+
+    <table class="table table-bordered table-hover table-striped" id="inventario-tabela">
+        <thead>
+            <tr>
+                <th>@View.Resources.Resource.NumeroCaminhao</th>
+                <th>@View.Resources.Resource.Acao</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@RenderPage("InventarioModal.cshtml")
+@RenderPage("ProdutoModal.cshtml")
+@section js{
+    <script src="~/Scripts/Inventario/inventario.js"></script>
+    <script type="text/javascript" src="~/Scripts/Mascaras/Mask.js"></script>
+}
